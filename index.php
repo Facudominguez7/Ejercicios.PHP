@@ -11,58 +11,50 @@ conectar();
   <meta charset="UTF-8" />
   <title>HOLA</title>
   <link rel="stylesheet" href="estilos.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OwFVZ9J6A" crossorigin="anonymous"></script>
 </head>
 
 
 <body class="bg-dark">
-  <nav class="navbar bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand">Navbar</a>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
-    </div>
-  </nav>
-
   <main>
-    <div class="d-flex justify-content-center mt-5">
-      <div class="list-group w-50">
-        <a href="index.php" class="list-group-item list-group-item-action active" aria-current="true">
-          Inicio
-        </a>
+    <div class="dropdown px-5 mt-5 ms-5">
+      <button class="btn btn-primary btn-lg p-3 fs-4 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Ejercicios
+      </button>
+      <ul class="dropdown-menu">
+        <li>
+          <a class="dropdown-item" type="button" href="index.php">
+            Inicio
+          </a>
+        </li>
         <?php
         $sql = "SELECT * FROM menu";
         $sql = mysqli_query($con, $sql);
         if (mysqli_num_rows($sql) != 0) {
           while ($r = mysqli_fetch_array($sql)) {
         ?>
-            <a href="index.php?pagina=<?php echo $r['archivoItem'] ?>" class="list-group-item list-group-item-action active" aria-current="true">
-            <?php echo $r['nombreItem'] ?>
-            </a>
+            <li>
+              <a class="dropdown-item" type="button" href="index.php?pagina=<?php echo $r['archivoItem'] ?>" class="nav-link active" aria-current="true">
+                <?php echo $r['nombreItem'] ?>
+              </a>
+            </li>
         <?php
           }
         }
         ?>
-        <!--
-          <a href="index.php?pagina=2" class="list-group-item list-group-item-action">Ejercicio 2</a>
-          <a href="index.php?pagina=3" class="list-group-item list-group-item-action">Ejercicio 3</a>
-          <a href="index.php?pagina=4" class="list-group-item list-group-item-action">Ejercicio 4</a>
-          <a href="index.php?pagina=5" class="list-group-item list-group-item-action" aria-disabled="true">Ejercicio 5</a>
-        -->   
-        <div>
-          <?php
-          if (!empty($_GET['pagina'])) {
-            include('modulos/' . $_GET['pagina'] . ".php");
-          }
-          ?>
-        </div>
-
-
-      </div>
+      </ul>
+    </div>
+    <div>
+      <?php
+      if (!empty($_GET['pagina'])) {
+        include('modulos/' . $_GET['pagina'] . ".php");
+      }
+      ?>
     </div>
   </main>
   <footer></footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 
 </html>

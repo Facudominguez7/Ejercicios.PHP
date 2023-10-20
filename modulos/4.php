@@ -1,6 +1,6 @@
-<div class="form-floating mt-5">
-    <p style="color: white;">4 - Estructura condicional (if)</p>
-    <textarea class="form-control w-100 " placeholder="Leave a comment here" id="floatingTextarea2" style="height: 500px">
+<div class="form-floating mt-5 ms-5">
+    <h3 style="color: white;" class="text-center mb-3">4 - Estructura condicional (if)</h3>
+    <textarea class="form-control w-50 mx-auto " placeholder="Leave a comment here" id="floatingTextarea2" style="height: 500px">
             $num = rand(1,3);
             if($num == 1){
                 echo "Uno";

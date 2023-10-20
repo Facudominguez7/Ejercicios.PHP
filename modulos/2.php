@@ -1,5 +1,5 @@
 <div class="form-floating mt-5">
-    <textarea class="form-control w-100 " placeholder="Leave a comment here" id="floatingTextarea2" style="height: 500px">
+    <textarea class="form-control w-50 mx-auto " placeholder="Leave a comment here" id="floatingTextarea2" style="height: 500px">
             $numEntero = 24;
             $numDouble = 741.42;
             $string = "Facundo";

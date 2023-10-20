@@ -1,6 +1,6 @@
-<div class="form-floating mt-5">
-    <p style="color: white;">3- Variables de tipo string</p>
-    <textarea class="form-control w-100 " placeholder="Leave a comment here" id="floatingTextarea2" style="height: 500px">
+<div class="form-floating mt-5 ms-5">
+    <h3 style="color: white;" class="text-center mb-3">3- Variables de tipo string</h3>
+    <textarea class="form-control w-50 mx-auto " placeholder="Leave a comment here" id="floatingTextarea2" style="height: 500px">
             $num1 = 24;
             $num2 = 25;
             $num3 = 26;
