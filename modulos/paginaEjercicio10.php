@@ -5,28 +5,19 @@
 
 <body class="bg-dark">
     <textarea class="form-control w-50 mx-auto mt-5 " placeholder="Leave a comment here" id="floatingTextarea2" style="height: 500px">
-    echo $_REQUEST['nombre'];
-    echo "
-    ";
-    if ($_REQUEST['edad'] >= 18){
-        echo "Es mayor de edad";
-    } else {
-        echo "No es mayor de edad";
-    }
-<?php
-echo "Desarrollo: ";
-echo "
-";
-echo $_REQUEST['nombre'];
-echo " ";
-if ($_REQUEST['edad'] >= 18) {
-    echo "Es mayor de edad";
-} else {
-    echo "No es mayor de edad";
-}
-
-?>
-
-</textarea>
+        DESARROLLO:
+        echo "
+        ";
+        echo "RESULTADO: ";
+        echo "
+        ";
+        echo $_POST["contrato"];
+        <?php
+            echo "RESULTADO: ";
+            echo "
+            ";
+            echo $_POST["contrato"];
+        ?>
+    </textarea>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>

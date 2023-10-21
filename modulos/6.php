@@ -11,19 +11,5 @@
         <br>
         <input type="submit" value="confirmar">
     </form>
-    <textarea class="form-control w-50 mx-auto " placeholder="Leave a comment here" id="floatingTextarea2" style="height: 500px">
-
-        <?php
-         
-            echo $_REQUEST['nombre'];
-            echo "
-            ";
-            if ($_REQUEST['edad'] >= 18){
-                echo "Es mayor de edad";
-            } else {
-                echo "No es mayor de edad";
-            }
-         
-        ?>
-    </textarea>
+   
 </div>
