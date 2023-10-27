@@ -9,7 +9,7 @@ conectar();
 <head>
   <meta name="viewport" content="width=device-width , initial-scale=1.0" />
   <meta charset="UTF-8" />
-  <title>HOLA</title>
+  <title>Ejercicios PHP</title>
   <link rel="stylesheet" href="estilos.css" />
   <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OwFVZ9J6A" crossorigin="anonymous"></script>
 </head>

@@ -1,6 +1,6 @@
 <div class="form-floating mt-5 ms-5">
     <h3 style="color: white;" class="text-center mb-3">12 - Creación de un archivo de texto.</h3>
-    <form method="post" action="modulos/paginaEjercicio12" style="color: white;" class="col-md-6 offset-md-3 text-center mb-3">
+    <form method="post" action="modulos/paginaEjercicio12.php" style="color: white;" class="col-md-6 offset-md-3 text-center mb-3">
         Nombre:
         <br>
         <input type="text" name="nombre">
